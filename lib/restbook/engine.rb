@@ -5,7 +5,7 @@ module Restbook
     config.generators do |g|
       g.template_engine :haml
       g.stylesheet_engine :sass
-      g.test_framework :rspec, :view_specs => false
+      g.test_framework :rspec, :view_specs => false, :integration_tool => :rspec
     end
   end
 end
