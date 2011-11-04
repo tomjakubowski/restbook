@@ -1,0 +1,76 @@
+// Place all the styles related to the Comments controller here.
+// They will automatically be included in application.css.
+// You can use Sass here: http://sass-lang.com/
+
+// This styling is quick and ugly, but frankly I don't care since I expect 
+// the views will be modified by the user anyhow.
+
+$form-border-color: #bbb
+
+body
+  font-size: 14px
+  width: 480px
+  padding:
+    left: 20px
+
+form
+  width: 400px
+
+label, input, textarea
+  display: block
+
+fieldset
+  border: 1px solid $form-border-color
+  border-width: 1px
+
+legend, label
+  font-weight: bold
+
+legend
+  font-size: 1.2em
+  line-height: 2
+
+nav
+  ul
+    padding-left: 0
+    margin: 0 1.5em 1.5em 0
+    list-style: none
+  li
+    display: inline-block
+
+section h1
+  font-size: 1.5em
+
+input[type="text"], textarea
+  border: 1px solid $form-border-color
+  font-size: 0.8em
+  padding: 5px
+  margin:
+    top: 0.5em
+    bottom: 0.5em
+
+article.restbook-comment
+  padding-left: 1em
+  footer
+    font-size: 0.8em
+
+#errorExplanation
+  border: 2px solid red
+  h2
+    padding: 5px 10px
+    margin: 0
+    text-align: center
+    background-color: red
+    color: white
+    font-size: 1.0em
+  p
+    margin: 0
+    padding: 10px 10px
+  ul
+    margin: 0px 0px 10px 0px      
+
+.field_with_errors 
+  label
+    color: red
+  input, textarea
+    border: 2px solid red

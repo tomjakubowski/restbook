@@ -1,0 +1,9 @@
+= form_for @comment do |f|
+  = f.error_messages
+  %fieldset
+    %legend Add your signature!
+    = f.label :author, "Your name:"
+    = f.text_field :author, placeholder: "#1 RESTbook Fan"
+    = f.label :body, "Message:"
+    = f.text_area :body, placeholder: "RESTbook rules!"
+    = f.submit "Submit"

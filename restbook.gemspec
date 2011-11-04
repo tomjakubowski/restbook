@@ -15,10 +15,12 @@ Gem::Specification.new do |s|
 
   # s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
   s.files = `git ls-files`.split("\n")
-
+  
+  s.required_ruby_version = '~> 1.9.0'
   s.add_dependency "rails", "~> 3.1.1"
   s.add_dependency "haml"
   s.add_dependency "sass"
+  s.add_dependency "dynamic_form"
   # s.add_dependency "jquery-rails"
 
   s.add_development_dependency "haml-rails"
@@ -29,4 +31,5 @@ Gem::Specification.new do |s|
   s.add_development_dependency "rspec-rails", "~> 2.7"
   s.add_development_dependency "capybara", "~> 1.1"
   s.add_development_dependency "spork", "~> 0.9.0.rc"
+  s.add_development_dependency "factory_girl_rails", "~> 1.3.0"
 end
