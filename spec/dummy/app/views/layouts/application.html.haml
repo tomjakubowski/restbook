@@ -2,8 +2,8 @@
 %html
 %head
   %title RESTbook
-  = stylesheet_link_tag  "application"
   = stylesheet_link_tag "restbook/application"
+  = stylesheet_link_tag  "application"
   = javascript_include_tag "application"
   = csrf_meta_tags
 %body
@@ -11,7 +11,8 @@
     %h1 Welcome to RESTbook!
     %nav
       %ul
-        %li= link_to "Read the RESTbook!", root_path
-        %li= link_to "Sign the RESTbook!", sign_path
+        %li= link_to "Home", main_app.root_path
+        %li= link_to "Read the RESTbook!", restbook.root_path
+        %li= link_to "Sign the RESTbook!", restbook.sign_path
   %section#container
     = yield
