@@ -5,6 +5,8 @@
   = stylesheet_link_tag "restbook/application"
   = stylesheet_link_tag  "application"
   = javascript_include_tag "application"
+  /[if lt IE 9]
+    %script(src="//html5shiv.googlecode.com/svn/trunk/html5.js")
   = csrf_meta_tags
 %body
   %header
