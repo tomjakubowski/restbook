@@ -52,6 +52,8 @@ end
 Spork.each_run do
   # This code will be run each time you run your specs.
   FactoryGirl.find_definitions
+  
+  $rspec_start_time = Time.now
 
   # I like to get new url helpers without restarting spork.
   RSpec.configure do |config|
