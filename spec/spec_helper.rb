@@ -64,6 +64,7 @@ Spork.each_run do
   end
 
   # Hack to force Spork to reload engine models + controllers.
+  load "spec/dummy/app/controllers/application_controller.rb"
   Dir[File.join(ENGINE_RAILS_ROOT, "app/models/restbook/*.rb")].each { |f| load f }
   Dir[File.join(ENGINE_RAILS_ROOT, "app/controllers/restbook/*.rb")].each { |f| load f }
 end
