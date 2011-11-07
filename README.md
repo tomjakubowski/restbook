@@ -38,7 +38,7 @@ RESTbook's views into your application tree, run:
 RESTbook views will be rendered in your application's layouts. Some basic
 styles for RESTbook's default views are available by adding:
 
-    = stylesheet_link_tag "restbook/application"
+    <%= stylesheet_link_tag "restbook/application" %>
 
 to your layout where appropriate. If you want RESTbook views to be rendered
 in their layout, create a `restbook` directory in `app/views/layouts/`, and
