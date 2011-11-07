@@ -27,6 +27,24 @@ Add the following to your application's routes.rb:
 
 RESTbook is now accessible at `http://yoursite.com/restbook`.
 
+## Integrating with your application
+
+RESTbook provides default views which can be used unmodified, but it is
+recommended that they be replaced to meet your application's needs. To copy
+RESTbook's views into your application tree, run:
+
+    rails generate restbook:views
+
+RESTbook views will be rendered in your application's layouts. Some basic
+styles for RESTbook's default views are available by adding:
+
+    = stylesheet_link_tag "restbook/application"
+
+to your layout where appropriate. If you want RESTbook views to be rendered
+in their layout, create a `restbook` directory in `app/views/layouts/`, and
+create a `application.html.erb` (or whatever it would be named using your
+template engine) layout there.
+
 ## Features
 
 - Rails::Engine keeps all RESTbook models, controllers, views, and database
@@ -34,11 +52,9 @@ RESTbook is now accessible at `http://yoursite.com/restbook`.
 - Permanent guestbook comments, with no deletion (yet)!
 - No authentication or authorization!!
 - "Wild West" style guestbook!
-- Hard-to-change default views which are ugly as sin!
 
 ## TODO
 
-- Allow user to easily override views as in devise (`rake generate restbook_views`).
 - Plug into authorization gems like CanCan.
 - Delete and edit comments.
 - Markdown or other formatters in comments.

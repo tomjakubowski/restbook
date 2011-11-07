@@ -5,3 +5,7 @@
  *= require_self
  *= require_tree . 
 */
+
+body {
+  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
