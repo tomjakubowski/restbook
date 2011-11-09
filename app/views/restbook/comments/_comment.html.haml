@@ -1,5 +1,3 @@
 %article.restbook-comment
   %p= comment.body
-  %footer
-    ="by #{comment.author}, "
-    =link_to "#{time_ago_in_words(comment.created_at)} ago.", comment
+  %footer by #{comment.author}, #{link_to "#{time_ago_in_words(comment.created_at)} ago", comment}.
