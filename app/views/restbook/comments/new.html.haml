@@ -1,5 +1,11 @@
 = form_for @comment do |f|
-  = f.error_messages
+  - if @comment.errors.any?
+    #errorExplanation
+      %h2 #{pluralize(@comment.errors.count, "error")} prevented this comment from being saved:
+      %p
+        %ul
+          =list_of(@comment.errors.full_messages) do |msg|
+            = msg
   %fieldset
     %legend Add your signature!
     = f.label :author, "Your name:"
