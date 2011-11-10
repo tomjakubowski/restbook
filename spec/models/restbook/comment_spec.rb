@@ -26,7 +26,7 @@ module Restbook
     end
     
     it "should reject body text which is too long" do
-      loremipsum = Comment.new(@attr.merge(body: "a" * 5001))
+      loremipsum = Comment.new(@attr.merge(body: "a" * 1001))
       loremipsum.should_not be_valid
     end
   end
