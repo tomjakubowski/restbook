@@ -60,6 +60,7 @@ template engine) layout there.
 - Markdown or other formatters in comments.
 - Optional reCAPTCHA.
 - Pagination.
+- Anti-spam using Akismet.
 
 ## Authors
 
