@@ -2,7 +2,8 @@
 
 RESTbook is a Rails 3 engine which provides basic guestbook functionality
 inspired by RESTful practices. It is still very much a work in progress.
-RESTbook requires Ruby 1.9.2 or higher. 
+RESTbook requires Ruby 1.9.2 or higher. A demonstration of RESTbook is available
+at [http://restbook-demo.herokuapp.com/][demo].
 
 ## Installing RESTbook
 
@@ -49,9 +50,6 @@ template engine) layout there.
 
 - Rails::Engine keeps all RESTbook models, controllers, views, and database
   tables namespaced away from your app.
-- Permanent guestbook comments, with no deletion (yet)!
-- No authentication or authorization!!
-- "Wild West" style guestbook!
 
 ## TODO
 
@@ -65,3 +63,5 @@ template engine) layout there.
 ## Authors
 
 - Tom Jakubowski, http://github.com/tomjakubowski
+
+[demo]: http://restbook-demo.herokuapp.com/
